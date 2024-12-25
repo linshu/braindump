@@ -1,7 +1,8 @@
-import mongoClient from "./mongo";
+//import mongoClient from "./mongo";
+import clientPromise from './mongodb';
 
-import { serialize } from 'next-mdx-remote/serialize';
-import type { MDXRemoteSerializeResult } from 'next-mdx-remote';
+//import { serialize } from 'next-mdx-remote/serialize';
+//import type { MDXRemoteSerializeResult } from 'next-mdx-remote';
 
 export interface UserProps {
   name: string;
@@ -9,7 +10,7 @@ export interface UserProps {
   email: string;
   image: string;
   bio: string;
-  bioMdx: MDXRemoteSerializeResult<Record<string, unknown>>;
+  //bioMdx: MDXRemoteSerializeResult<Record<string, unknown>>;
   followers: number;
   verified: boolean;
 }
